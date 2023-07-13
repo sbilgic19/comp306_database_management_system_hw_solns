@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Dashboard.css">
+    <meta charset="UTF-8">
+    <title>COMP306</title>
+    <script type="text/javascript" src="middle.js"></script>
+</head>
+
+<body>
+
+    <h1>Welcome To Question 4</h1>
+
+    <form>
+        <label for="operation_type" class="label">Choose an operation type:</label>
+        <select id="selectBox">
+            <option value="MIN">MIN</option>
+            <option value="AVG">AVG</option>
+        </select>
+        <label for="country_name" class="label">Country Name:</label>
+        <input type="text" id="countryName" name="countryName"><br><br>
+        <input type="button" value="Get Life Expectancy" onclick="getLifeExpectancyTable()">
+    </form>
+
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Life Expectancy</th>
+                <th>Government Form</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody id="resBody">
+        </tbody>
+    </table>
+
+</body>
+
+</html>
